@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+
+<link rel="icon" type="image/x-icon" href="IEEE SB CEK.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loader</title>
+  <style>
+
+  body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1a1a1a;
+      display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+     
+    }
+
+.profile {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+.loader {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.loader:before , .loader:after{
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset;
+}
+.loader:after {
+  box-shadow: 0 5px 0 #FF3D00 inset;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {  transform: rotate(0)}
+  100% { transform: rotate(360deg)}
+}
+  </style>
+</head>
+<body>
+
+<div class="loader">
+<img src="IEEE SB CEK.png" class="profile" alt="Profile" width="100px" height="100px" />
+</div>
+</body>
+</html>
